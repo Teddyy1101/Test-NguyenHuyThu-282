@@ -15,7 +15,7 @@ interface VideoCardProps {
 export default function VideoCard({ video }: VideoCardProps) {
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
-  const { isMuted, toggleMute } = useMuteState();
+  const { isMuted, toggleMute, forceMute } = useMuteState();
   const [showPlayPauseIcon, setShowPlayPauseIcon] = useState<boolean>(false);
   const [progress, setProgress] = useState<number>(0);
   const [containerRef, isIntersecting] = useElementOnScreen({
@@ -28,7 +28,9 @@ export default function VideoCard({ video }: VideoCardProps) {
 
     if (isIntersecting) {
       videoElement.play().catch(() => {
+        // Browser chặn autoplay có âm thanh → fallback muted + đồng bộ icon
         videoElement.muted = true;
+        forceMute();
         videoElement.play().catch(() => {
           setIsPlaying(false);
         });
@@ -38,7 +40,7 @@ export default function VideoCard({ video }: VideoCardProps) {
       videoElement.pause();
       setIsPlaying(false);
     }
-  }, [isIntersecting]);
+  }, [isIntersecting, forceMute]);
 
   useEffect(() => {
     const videoElement = videoRef.current;
