@@ -3,8 +3,7 @@ import { Video } from "@/types";
 export const mockVideos: Video[] = [
   {
     id: "video-001",
-    videoUrl:
-      "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+    videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4",
     authorName: "@bigbuckbunny",
     description:
       "🐰 Big Buck Bunny - Chú thỏ dũng cảm trong cuộc phiêu lưu đầy màu sắc #animation #3d #shortfilm",
@@ -13,64 +12,63 @@ export const mockVideos: Video[] = [
   {
     id: "video-002",
     videoUrl:
-      "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
-    authorName: "@elephantsdream",
+      "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/friday.mp4",
+    authorName: "@fridayvibes",
     description:
-      "🐘 Elephant's Dream - Thế giới siêu thực nơi trí tưởng tượng không có giới hạn #animation #art #dream",
+      "🌊 Friday Vibes - Cảm nhận khoảnh khắc thư giãn cuối tuần #friday #vibes #relax",
     likesCount: 8750,
   },
   {
     id: "video-003",
-    videoUrl:
-      "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
-    authorName: "@blazerunner",
+    videoUrl: "https://media.w3.org/2010/05/sintel/trailer.mp4",
+    authorName: "@sintelofficial",
     description:
-      "🔥 For Bigger Blazes - Ngọn lửa bùng cháy và những pha hành động nghẹt thở #action #fire #epic",
+      "🐉 Sintel Trailer - Hành trình tìm kiếm chú rồng nhỏ bé #sintel #trailer #epic",
     likesCount: 34200,
   },
   {
     id: "video-004",
     videoUrl:
-      "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
-    authorName: "@escapist",
+      "https://videos.pexels.com/video-files/3015510/3015510-hd_1920_1080_24fps.mp4",
+    authorName: "@oceanwaves",
     description:
-      "🏃 For Bigger Escapes - Cuộc trốn thoát ngoạn mục không thể rời mắt #escape #thriller #adventure",
+      "🌊 Sóng biển vỗ bờ - Âm thanh thiên nhiên thư giãn tâm hồn #ocean #waves #nature #relax",
     likesCount: 19800,
   },
   {
     id: "video-005",
     videoUrl:
-      "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
-    authorName: "@funtime",
+      "https://videos.pexels.com/video-files/1093662/1093662-hd_1920_1080_30fps.mp4",
+    authorName: "@cloudchaser",
     description:
-      "🎉 For Bigger Fun - Khoảnh khắc vui nhộn đầy năng lượng tích cực #fun #energy #goodvibes",
+      "☁️ Mây trôi bình yên - Khoảnh khắc tĩnh lặng giữa bầu trời xanh #clouds #sky #peaceful #timelapse",
     likesCount: 6300,
   },
   {
     id: "video-006",
     videoUrl:
-      "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
-    authorName: "@joyrides",
+      "https://videos.pexels.com/video-files/2795173/2795173-hd_1920_1080_25fps.mp4",
+    authorName: "@naturelover",
     description:
-      "🚗 For Bigger Joyrides - Hành trình trên những cung đường tuyệt đẹp #driving #travel #joyride",
+      "🌿 Thiên nhiên hoang dã - Vẻ đẹp nguyên sơ của rừng xanh bất tận #nature #forest #wildlife #green",
     likesCount: 41500,
   },
   {
     id: "video-007",
     videoUrl:
-      "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4",
-    authorName: "@meltdown",
+      "https://videos.pexels.com/video-files/4763824/4763824-uhd_2560_1440_24fps.mp4",
+    authorName: "@citylights",
     description:
-      "💥 For Bigger Meltdowns - Những khoảnh khắc bùng nổ không thể quên #explosion #drama #intense",
+      "🌃 Ánh đèn thành phố - Nhịp sống đô thị lung linh về đêm #city #nightlife #lights #urban",
     likesCount: 27600,
   },
   {
     id: "video-008",
     videoUrl:
-      "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
-    authorName: "@tearsofsteel",
+      "https://videos.pexels.com/video-files/3571264/3571264-uhd_2560_1440_30fps.mp4",
+    authorName: "@sunsetviews",
     description:
-      "🤖 Tears of Steel - Câu chuyện cảm động về tình yêu và công nghệ trong tương lai #scifi #film #emotion",
+      "🌅 Hoàng hôn tuyệt đẹp - Khi mặt trời chìm dần sau chân trời #sunset #golden #sky #beautiful",
     likesCount: 15900,
   },
 ];
